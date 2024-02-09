@@ -1,4 +1,4 @@
-[Live Demo](https://aakalaw.github.io/react-portfolio-aakalaw/)
+[Live Demo](https://aakalaw.github.io)
 
 # Getting Started with Create React App
 
