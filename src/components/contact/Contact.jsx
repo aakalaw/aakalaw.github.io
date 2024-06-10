@@ -28,13 +28,13 @@ const Contact = () => {
         <article className="contact__option">
             <MdOutlineEmail className='contact__option-icon'/>
           <h4>Email</h4>
-          <h5>angeloaaronkalaw@gmail.com</h5>
+          <h5>name@gmail.com</h5>
           <a href="mailto:name@gmail.com" target="_blank">Send a message</a>
         </article>
         <article className="contact__option">
             <PiMessengerLogoBold className='contact__option-icon'/>
           <h4>Messenger</h4>
-          <h5>angeloaaronkalaw</h5>
+          <h5>username</h5>
           <a href="https://m.me/username" target="_blank">Send a message</a>
         </article>
         <article className="contact__option">
