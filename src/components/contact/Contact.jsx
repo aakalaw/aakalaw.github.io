@@ -13,7 +13,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_xx2wiyr', 'template_kbln4oj', form.current, { publicKey: '6l7OX5mSa-qrb2g6z',})
+    emailjs.sendForm('service_id', 'template_id', form.current, { publicKey: 'public_key',})
 
     e.target.reset();
   };
@@ -29,13 +29,13 @@ const Contact = () => {
             <MdOutlineEmail className='contact__option-icon'/>
           <h4>Email</h4>
           <h5>angeloaaronkalaw@gmail.com</h5>
-          <a href="mailto:angeloaaronkalaw@gmail.com" target="_blank">Send a message</a>
+          <a href="mailto:name@gmail.com" target="_blank">Send a message</a>
         </article>
         <article className="contact__option">
             <PiMessengerLogoBold className='contact__option-icon'/>
           <h4>Messenger</h4>
           <h5>angeloaaronkalaw</h5>
-          <a href="https://m.me/angeloaaronkalaw" target="_blank">Send a message</a>
+          <a href="https://m.me/username" target="_blank">Send a message</a>
         </article>
         <article className="contact__option">
             <PiWhatsappLogo className='contact__option-icon'/>
