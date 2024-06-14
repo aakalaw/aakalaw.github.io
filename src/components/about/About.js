@@ -8,7 +8,7 @@ export default class About extends Component {
     return (
       <>
        <Helmet>
-        <title>AAK | About</title>
+        <title>About | AAK</title>
         </Helmet>
         <Avatar page="about" />
         <AboutMenu />
