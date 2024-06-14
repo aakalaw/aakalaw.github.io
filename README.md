@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [Live Demo](https://aakalaw.github.io/react-portfolio-aakalaw/)
+=======
+[Live Demo](https://aakalaw.github.io)
+>>>>>>> 545280cfed677c8a9f060a8419e9527f92f6e01e
 
 # Getting Started with Create React App
 
