@@ -1,1 +1,1 @@
-[Live Demo](https://aakalaw.github.io/?to=)
+[Live Demo](https://aakalaw.github.io)
