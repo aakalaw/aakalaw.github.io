@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Nav from "./nav/Nav.js";
-import About from "./about/About";
-import Skills from "./skills/Skills";
-import Projects from "./projects/Projects";
-import Contact from "./contact/Contact";
-import "./styles/app.css";
-import Background from "./background/Background.js";
-import PlayerStats from "./playerStats/PlayerStats.js";
+import Nav from "./components/nav/Nav.js";
+import About from "./components/about/About.js";
+import Skills from "./components/skills/Skills.js";
+import Projects from "./components/projects/Projects.js";
+import Contact from "./components/contact/Contact.js";
+import "./App.css";
+import Background from "./components/background/Background.js";
+import PlayerStats from "./components/playerStats/PlayerStats.js";
 
 const App = () => {
   return (

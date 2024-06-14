@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import classNames from "classnames";
-import projects from "./projectsData";
-import "../styles/projectsMenu.css";
+import projects from "./projectsData.js";
+import "./projectsMenu.css";
 
 export default class ProjectsMenu extends Component {
   constructor(props) {
