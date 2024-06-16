@@ -1,3 +1,5 @@
-[personal website](https://aakalaw.github.io)
+#[Personal Website](https://aakalaw.github.io)
 
-Reference [mldangelo.com](https://mldangelo.com)
+## 🙌 Acknowledgements
+
+- Special thanks to [@mldangelo](https://github.com/mldangelo) for his [personal-site](https://github.com/mldangelo/personal-site) repo.
