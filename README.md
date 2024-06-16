@@ -1,4 +1,4 @@
-#[Personal Website](https://aakalaw.github.io)
+[My Personal Website](https://aakalaw.github.io)
 
 ## 🙌 Acknowledgements
 
