@@ -12,14 +12,16 @@ const SideBar = () => (
         <img src={`${PUBLIC_URL}/images/me.png`} alt="" />
       </Link>
       <header>
-        <h2>AAK</h2>
+        <h2>ANGELO AARON</h2>
         <p><a href="mailto:angeloaaronkalaw@gmail.com">angeloaaronkalaw@gmail.com</a></p>
       </header>
     </section>
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I am Angelo Aaron Kalaw.
+      <p>Hi, I am Angelo Aaron Kalaw.  I am a TIP(QC) BSCpE undergraduate
+        and I have more than four years of work experience in CAD Operations
+        who wants to shift and cross the threshold of Web Development.
       </p>
       <ul className="actions">
         <li>
@@ -30,7 +32,7 @@ const SideBar = () => (
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; AAK <Link to="/">angeloaaronkalaw@gmail.com</Link>.</p>
+      <p className="copyright">&copy; ANGELO AARON KALAW <Link to="/">angeloaaronkalaw@gmail.com</Link>.</p>
     </section>
   </section>
 );

@@ -1,7 +1,7 @@
 const courses = [
   {
-    title: 'Project Design 2',
-    number: 'CP520D2',
+    title: 'Design Project 2',
+    number: 'CP 520D2',
     link: 'https://www.tip.edu.ph/',
     university: 'TIP | QC',
   },

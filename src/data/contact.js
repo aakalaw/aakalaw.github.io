@@ -1,9 +1,6 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
-import { faAngellist } from '@fortawesome/free-brands-svg-icons/faAngellist';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
 // See https://fontawesome.com/icons?d=gallery&s=brands,regular&m=free
 // to add other icons.
@@ -15,29 +12,14 @@ const data = [
     icon: faGithub,
   },
   {
-    link: 'https://facebook.com/#',
+    link: 'https://www.facebook.com/angeloaaronkalaw',
     label: 'Facebook',
     icon: faFacebookF,
-  },
-  {
-    link: 'https://www.instagram.com/#',
-    label: 'Instagram',
-    icon: faInstagram,
   },
   {
     link: 'https://www.linkedin.com/in/angeloaaronkalaw',
     label: 'LinkedIn',
     icon: faLinkedinIn,
-  },
-  {
-    link: 'https://',
-    label: 'Angel List',
-    icon: faAngellist,
-  },
-  {
-    link: 'https://twitter.com/#',
-    label: 'Twitter',
-    icon: faTwitter,
   },
   {
     link: 'mailto:angeloaaronkalaw@gmail.com',
