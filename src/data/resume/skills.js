@@ -1,8 +1,8 @@
 const skills = [
   {
-    title: 'Javascript',
+    title: 'AutoCAD',
     competency: 4,
-    category: ['Web Development', 'Languages', 'Javascript'],
+    category: ['C', 'Languages', 'Javascript'],
   },
   {
     title: 'Node.JS',
