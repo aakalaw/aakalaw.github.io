@@ -31,8 +31,9 @@ const Resume = () => (
     <article className="post" id="resume">
       <header>
         <div className="title">
-          <h2><Link to="resume">Resume</Link></h2>
+          <h2><Link to="/resume">Resume</Link></h2>
           <div className="link-container">
+            <h4><a href="https://drive.google.com/file/d/16FMKk2q1Cqr8ufUx39YHmrJrqDLyvPSL/view">download</a></h4>
             {Object.keys(sections).map((sec) => (
               <h4 key={sec}>
                 <a href={`#${sec.toLowerCase()}`}>{sec}</a>
