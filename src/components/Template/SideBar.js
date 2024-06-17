@@ -19,8 +19,8 @@ const SideBar = () => (
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I am Angelo Aaron Kalaw.  I am a proud TIPIAN and a BSCpE undergrad
-        but I have more than four years of work experience in CAD Operations
+      <p>Hi, I am Angelo Aaron Kalaw.  I am a proud T.I.P.ian and a Computer Engineering undergrad.
+        I have more than four years of work experience in CAD Operations
         who wants to shift and cross the threshold of Software and Web Development.
       </p>
       <ul className="actions">
