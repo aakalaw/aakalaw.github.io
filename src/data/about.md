@@ -16,6 +16,12 @@ You can ask me personally for some stories you want to know about me that I'm to
 - Guitar
 - Bicycle
 
+# Fun facts
+
+- My dream vacation together with my family is going to Japan and riding in a hot air balloon.
+- I love to cook. My signature dish is homemade sunny-sideup fried egg.
+- If I could have any superpower, it would be to speak any language so I could connect with anyone in the world.
+
 # I dream of
 
 - Inspiring and feeling inspired.
