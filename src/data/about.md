@@ -6,7 +6,7 @@ I always made a to-do list for everyday. I just can’t figure out who’s going
 
 - Karl Marx said, “History repeats itself, first as a tragedy, second as a farce.”
 
-You can ask me personally for some histories and stories I had that I'm shy to share with the internet.
+You can ask me personally for some stories you want to know about me that I'm too afraid to share with the internet.
 
 # I like
 
