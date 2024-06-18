@@ -1,6 +1,6 @@
 # Saying
 
-I always made a to-do list for everyday. I just can’t figure out who’s going to do it.
+- I always made a to-do list for everyday. I just can’t figure out who’s going to do it.
 
 # History
 
@@ -24,9 +24,9 @@ You can ask me personally for some stories you want to know about me that I'm to
 
 # I dream of
 
-- Inspiring and feeling inspired.
-- Enabling a brighter future for everyone, regardless of political or socioeconomic status.
-- Treating every individual with genuine kindness and respect.
-- Staying curious.
-- Continually improving.
+- Filled with inspiration and experiencing the joy of inspiring others.
+- Empowering a better future for all, irrespective of political or socioeconomic backgrounds.
+- Showing sincere kindness and respect to each person.
+- Remaining inquisitive.
+- Consistently striving for improvement.
 - You not checking the commit history for earlier drafts of this file.
