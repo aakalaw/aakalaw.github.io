@@ -19,7 +19,7 @@ const SideBar = () => (
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I am Angelo Aaron Kalaw.  I am a proud T.I.P.ian and a Computer Engineering undergrad.
+      <p>Hi, I am Angelo Aaron Kalaw, a Computer Engineering undergraduate.
         I have more than four years of work experience in CAD Operations
         who wants to shift and cross the threshold of Software and Web Development.
       </p>
