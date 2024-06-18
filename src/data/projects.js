@@ -3,7 +3,7 @@ const data = [
   {
     title: 'Fire Professionals Inc. Official Website',
     subtitle: '2023 Last Update',
-    image: '/images/projects/nearestdollar.jpg',
+    image: '/images/projects/firepro-website.jpg',
     date: '2023-09-15',
     desc:
       'Built to generate more leads and to boost online engagements '
