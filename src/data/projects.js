@@ -6,9 +6,9 @@ const data = [
     image: '/images/projects/firepro-website.jpg',
     date: '2023-09-15',
     desc:
-      'Built to generate more leads and to boost online engagements '
-      + 'for local businesses about the services that the company offers. Hosted in cpanel, '
-      + 'managed in WordPress, and customized layout using HTML+CSS.',
+      'Built to generate more leads and boost online engagement for '
+      + 'local businesses regarding the services the company offers. Hosted on cPanel, '
+      + 'managed in WordPress, and featuring a customized layout using HTML+CSS.',
   },
 ];
 
