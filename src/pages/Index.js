@@ -13,19 +13,19 @@ const Index = () => (
         <div className="title">
           <h2><Link to="/">About this site</Link></h2>
           <p>
-            A beautiful, responsive, statically-generated,
-            react application written with modern Javascript.
+            A beautifully responsive statically generated
+            React application written in modern JavaScript.
           </p>
         </div>
       </header>
-      <p> Welcome to my website. Please feel free to read more <Link to="/about">about me</Link>,
-        or you can check out my {' '}
+      <p> Welcome to my website! Feel free to review more <Link to="/about">about me</Link>,
+        explore my {' '}
         <Link to="/resume">resume</Link>, {' '}
-        <Link to="/projects">projects</Link>, {' '}
+        check out <Link to="/projects">my projects</Link>, {' '}
         view <Link to="/stats">site statistics</Link>, {' '}
-        or <Link to="/contact">contact</Link> me.
+        or <Link to="/contact">get in touch with me</Link>.
       </p>
-      <p> Source available <a href="https://github.com/aakalaw/aakalaw.github.io">here</a>.</p>
+      <p> Source code is available <a href="https://github.com/aakalaw/aakalaw.github.io">here</a>.</p>
     </article>
   </Main>
 );
