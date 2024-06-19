@@ -12,27 +12,26 @@ const SideBar = () => (
         <img src={`${PUBLIC_URL}/images/me.png`} alt="" />
       </Link>
       <header>
-        <h2>ANGELO AARON</h2>
-        <p><a href="mailto:angeloaaronkalaw@gmail.com">angeloaaronkalaw@gmail.com</a></p>
+        <h6>ANGELO AARON KALAW</h6>
+        <ul className="actions">
+          <li>
+            {!window.location.pathname.includes('/resume') ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
+          </li>
+        </ul>
       </header>
     </section>
 
     <section className="blurb">
-      <h2>About</h2>
-      <p>Hi, I am Angelo Aaron Kalaw, a Computer Engineering undergraduate.
+      <h1>About</h1>
+      <p>Hi, you can call me AA for short if you want. I am a Computer Engineering undergrad.
         I have more than four years of work experience in CAD Operations
         who wants to shift and cross the threshold of Full Stack Development.
       </p>
-      <ul className="actions">
-        <li>
-          {!window.location.pathname.includes('/resume') ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
-        </li>
-      </ul>
     </section>
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; ANGELO AARON KALAW <Link to="/">angeloaaronkalaw@gmail.com</Link>.</p>
+      <p className="copyright">&copy; AAK <Link to="/">angeloaaronkalaw@gmail.com</Link>.</p>
     </section>
   </section>
 );

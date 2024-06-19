@@ -29,4 +29,4 @@ You can ask me personally for some stories you want to know about me that I'm to
 - Showing sincere kindness and respect to each person.
 - Remaining inquisitive.
 - Consistently striving for improvement.
-- Living for around a hundred years.
+- Living for around a thousand years.
