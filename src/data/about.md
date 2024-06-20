@@ -6,7 +6,7 @@
 
 - Karl Marx said, “History repeats itself, first as a tragedy, second as a farce.”
 
-You can ask me personally for some stories you want to know about me that I'm too afraid to share with the internet.
+You can personally ask me about stories that I'm too afraid to share on the internet.
 
 # I like
 
