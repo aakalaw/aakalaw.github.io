@@ -15,6 +15,9 @@ const ContactForm = () => {
       .sendForm(serviceID, templateID, form.current, userID)
       .then(
         () => {
+          /*
+          eslint no-alert: 0
+          */
           alert('Message successfully sent!');
           window.location.reload(false);
         },
