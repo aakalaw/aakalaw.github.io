@@ -20,7 +20,7 @@ const Contact = () => (
         </div>
       </header>
       <div className="email-at">
-        <p>Or you can reach me via email at: </p>
+        <p>You also have the option to reach me by email at:</p>
         <EmailLink />
       </div>
       <ContactIcons />
