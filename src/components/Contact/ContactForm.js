@@ -2,6 +2,9 @@ import React, { useRef } from 'react';
 
 import emailjs from '@emailjs/browser';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const ContactForm = () => {
   const form = useRef();
 
@@ -11,6 +14,12 @@ const ContactForm = () => {
     const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
     const userID = process.env.REACT_APP_EMAILJS_USER_ID;
 
+    const reloadPage = () => {
+      setTimeout(() => {
+        window.location.reload();
+      }, 2500); // 3000 milliseconds = 3 seconds
+    };
+
     emailjs
       .sendForm(serviceID, templateID, form.current, userID)
       .then(
@@ -18,11 +27,11 @@ const ContactForm = () => {
           /*
           eslint no-alert: 0
           */
-          alert('Message successfully sent!');
-          window.location.reload(false);
+          toast.success('The message has been successfully sent!');
+          reloadPage();
         },
         () => {
-          alert('Failed to send the message, please try again');
+          toast.error('Failed to send message. Please check your connection.');
         },
       );
   };
@@ -51,6 +60,7 @@ const ContactForm = () => {
               required
             />
             <input type="submit" className="flat-button" value="SEND" />
+            <ToastContainer position="bottom-right" autoClose={2500} hideProgressBar theme="dark" />
           </ul>
         </form>
       </div>
