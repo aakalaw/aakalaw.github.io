@@ -15,7 +15,9 @@ const Contact = () => (
       <header>
         <div className="title">
           <h2><Link to="/contact">Contact</Link></h2>
-          <p>Feel free to send me a direct message. I am here to assist you with any questions.</p>
+          <p>Feel free to reach out and send me a direct message
+            if you need any assistance. I&apos;ll be happy to help.
+          </p>
           <ContactForm />
         </div>
       </header>

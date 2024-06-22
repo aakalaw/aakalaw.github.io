@@ -21,7 +21,7 @@ const SideBar = () => (
       <h2>About</h2>
       <p>Hi, you can call me AA. I am an undergraduate student in Computer Engineering with over
         four years of work experience in CAD Operations. I am eager to
-        shift gears and enter the realm o Full Stack Development.
+        shift gears and enter the realm of Full Stack Development.
       </p>
       <ul className="actions">
         <li>
