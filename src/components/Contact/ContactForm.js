@@ -60,7 +60,7 @@ const ContactForm = () => {
               required
             />
             <input type="submit" className="flat-button" value="SEND" />
-            <ToastContainer position="bottom-right" autoClose={2500} hideProgressBar theme="dark" />
+            <ToastContainer position="bottom-right" autoClose={2500} hideProgressBar theme="light" />
           </ul>
         </form>
       </div>

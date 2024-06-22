@@ -12,26 +12,27 @@ const SideBar = () => (
         <img src={`${PUBLIC_URL}/images/me.png`} alt="" />
       </Link>
       <header>
-        <h6>ANGELO AARON KALAW</h6>
-        <ul className="actions">
-          <li>
-            {!window.location.pathname.includes('/resume') ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
-          </li>
-        </ul>
+        <h6>Angelo Aaron Kalaw</h6>
+        <p><a href="mailto:angeloaaronkalaw@gmail.com">angeloaaronkalaw@gmail.com</a></p>
       </header>
     </section>
 
     <section className="blurb">
-      <h1>About</h1>
-      <p>Hi, you can call me AA for short if you want. I am a Computer Engineering undergrad.
-        I have more than four years of work experience in CAD Operations
-        who wants to shift and cross the threshold of Full Stack Development.
+      <h2>About</h2>
+      <p>Hi, you can call me AA. I am an undergraduate student in Computer Engineering with over
+        four years of work experience in CAD Operations. I am eager to
+        shift gears and enter the realm o Full Stack Development.
       </p>
+      <ul className="actions">
+        <li>
+          {!window.location.pathname.includes('/resume') ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
+        </li>
+      </ul>
     </section>
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; ANGELO AARON KALAW <Link to="/">aakalaw.github.io</Link>.</p>
+      <p className="copyright">&copy; Angelo Aaron Kalaw <Link to="/">aakalaw.github.io</Link>.</p>
     </section>
   </section>
 );
