@@ -9,6 +9,7 @@ const data = [
       'Built to generate more leads and boost online engagement for '
       + 'local businesses regarding the services the company offers. Hosted on cPanel, '
       + 'managed in WordPress, and featuring a customized layout using HTML+CSS.',
+    url: 'https://www.fireprofessionals.com.ph',
   },
 ];
 
