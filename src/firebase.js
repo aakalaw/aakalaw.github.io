@@ -2,12 +2,6 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { getStorage } from 'firebase/storage';
 import { getFirestore } from 'firebase/firestore';
-// Import polyfills for TextEncoder and TextDecoder
-import { TextEncoder } from 'util';
-import 'text-encoding-utf-8';
-
-// Assign polyfills globally
-global.TextEncoder = TextEncoder;
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY || 'PUT_IN_A_DUMMY_API_KIEY',
@@ -19,7 +13,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
+export const auth = getAuth();
 const provider = new GoogleAuthProvider();
 export const db = getFirestore(app);
 export const storage = getStorage(app);
