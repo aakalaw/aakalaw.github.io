@@ -40,6 +40,7 @@
     "react-scripts": "^5.0.1",
     "react-toastify": "^10.0.5",
     "text-encoding": "^0.7.0",
+    "text-encoding-utf-8": "^1.0.2",
     "undici": "^6.19.2",
     "util": "^0.12.5",
     "web-encoding": "^1.1.5"

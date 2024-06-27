@@ -5,6 +5,9 @@ const Login = () => {
   const handleSignInClick = () => {
     signInWithGoogle()
       .then((result) => {
+        /*
+        eslint no-alert: 0
+        */
         if (result.user.email === process.env.REACT_APP_MY_EMAIL) {
           alert('Success login.');
         } else {

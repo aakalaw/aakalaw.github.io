@@ -222,6 +222,9 @@ const Home = () => {
 
   // Delete project
   const handleDeleteProject = (projectId, imageUrl) => {
+    /*
+    eslint no-alert: 0
+    */
     if (window.confirm('Are you sure you want to delete this project?')) {
       deleteProject(projectId, imageUrl);
     }

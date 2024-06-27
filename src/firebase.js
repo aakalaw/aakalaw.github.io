@@ -4,6 +4,7 @@ import { getStorage } from 'firebase/storage';
 import { getFirestore } from 'firebase/firestore';
 // Import polyfills for TextEncoder and TextDecoder
 import { TextEncoder } from 'util';
+import 'text-encoding-utf-8';
 
 // Assign polyfills globally
 global.TextEncoder = TextEncoder;
