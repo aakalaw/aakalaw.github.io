@@ -245,7 +245,7 @@ const Home = () => {
             <input type="text" placeholder="Url" value={newUrl} onChange={handleUrlChange} required />
           </p>
           <p>
-            <input type="file" onChange={handleEditImageChange} /> {/* Edit image input */}
+            <input type="file" onChange={handleEditImageChange} required /> {/* Edit image input */}
           </p>
           <button type="submit">Submit</button>
           <button onClick={() => auth.signOut()} type="button">

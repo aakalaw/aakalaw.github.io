@@ -1,7 +1,13 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import { TextEncoder } from 'util';
+
 import Main from './layouts/Main'; // fallback for lazy pages
-import './static/css/main.scss'; // All of our styles
+import './static/css/main.scss'; // All of our styles// Import polyfills for TextEncoder and TextDecoder
+
+// Assign polyfills globally
+global.TextEncoder = TextEncoder;
 
 const { PUBLIC_URL } = process.env;
 

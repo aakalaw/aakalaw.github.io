@@ -39,7 +39,10 @@
     "react-router-dom": "^6.22.3",
     "react-scripts": "^5.0.1",
     "react-toastify": "^10.0.5",
-    "text-encoding": "^0.7.0"
+    "text-encoding": "^0.7.0",
+    "undici": "^6.19.2",
+    "util": "^0.12.5",
+    "web-encoding": "^1.1.5"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.23.10",
