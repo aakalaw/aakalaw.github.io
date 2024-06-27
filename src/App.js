@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { TextEncoder, TextDecoder } from 'text-encoding-utf-8';
 
 import Main from './layouts/Main'; // fallback for lazy pages
-import './static/css/main.scss'; // All of our styles// Import polyfills for TextEncoder and TextDecoder
+import './static/css/main.scss'; // All of our styles
 
 // Assign polyfills globally
 global.TextEncoder = TextEncoder;
