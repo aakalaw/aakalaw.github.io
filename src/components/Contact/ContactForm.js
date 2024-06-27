@@ -17,16 +17,13 @@ const ContactForm = () => {
     const reloadPage = () => {
       setTimeout(() => {
         window.location.reload();
-      }, 2500); // 3000 milliseconds = 3 seconds
+      }, 2500);
     };
 
     emailjs
       .sendForm(serviceID, templateID, form.current, userID)
       .then(
         () => {
-          /*
-          eslint no-alert: 0
-          */
           toast.success('The message has been successfully sent!');
           reloadPage();
         },
