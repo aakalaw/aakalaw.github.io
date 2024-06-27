@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { TextEncoder, TextDecoder } from 'util';
+import { TextEncoder } from 'util';
 import 'text-encoding-utf-8';
 
 import Main from './layouts/Main'; // fallback for lazy pages
@@ -9,7 +9,6 @@ import './static/css/main.scss'; // All of our styles// Import polyfills for Tex
 
 // Assign polyfills globally
 global.TextEncoder = TextEncoder;
-global.TextDecoder = TextDecoder;
 
 const { PUBLIC_URL } = process.env;
 
