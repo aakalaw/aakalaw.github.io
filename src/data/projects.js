@@ -12,6 +12,5 @@ const data = [
     url: 'https://www.fireprofessionals.com.ph',
   },
 ];
-  
+
 export default data;
-  
