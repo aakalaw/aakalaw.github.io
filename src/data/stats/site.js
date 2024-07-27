@@ -44,7 +44,7 @@ const data = [
     /* find . | grep ".js" | grep -vE ".min.js|node_modules|.git|.json" |
     xargs -I file cat file | wc -l */
     label: 'Lines of Javascript powering this website',
-    value: '1459',
+    value: '1481',
     link: 'https://github.com/aakalaw/aakalaw.github.io/graphs/contributors',
   },
 ];
