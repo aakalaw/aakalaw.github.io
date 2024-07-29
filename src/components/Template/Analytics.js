@@ -13,7 +13,6 @@ const Analytics = () => {
 
   useEffect(() => {
     if (NODE_ENV === 'production') {
-      ReactGA.initialize(REACT_APP_MEASUREMENT_TRACKING_ID);
       ReactGA.set({
         page: pathname,
       });
