@@ -43,8 +43,34 @@ const data = [
     // TODO update this with a pre-commit hook
     /* find . | grep ".js" | grep -vE ".min.js|node_modules|.git|.json" |
     xargs -I file cat file | wc -l */
+
+    /*
+    # Define the root directory to start the search, e.g., the current directory
+    $rootDir = "."
+
+    # Get all .js files recursively
+    $files = Get-ChildItem -Path $rootDir -Recurse -Filter *.js | Where-Object {
+        # Exclude files with patterns
+        $_.FullName -notmatch '\.min\.js$' -and
+        $_.FullName -notmatch '\\node_modules\\' -and
+        $_.FullName -notmatch '\\\.git\\' -and
+        $_.FullName -notmatch '\.json$'
+    }
+
+    # Initialize line count
+    $totalLines = 0
+
+    # Iterate over each file and count lines
+    foreach ($file in $files) {
+        $lineCount = (Get-Content -Path $file.FullName | Measure-Object -Line).Lines
+        $totalLines += $lineCount
+    }
+
+    # Output the total line count
+    $totalLines
+    */
     label: 'Lines of Javascript powering this website',
-    value: '1481',
+    value: '1477',
     link: 'https://github.com/aakalaw/aakalaw.github.io/graphs/contributors',
   },
 ];
