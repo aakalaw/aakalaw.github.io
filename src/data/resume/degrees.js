@@ -3,7 +3,8 @@ const degrees = [
     school: 'Technological Institute of the Philippines',
     degree: 'Computer Engineering',
     link: 'https://www.tip.edu.ph/',
-    year: 2017,
+    startYear: 2011,
+    endYear: 2017,
   },
 ];
 
