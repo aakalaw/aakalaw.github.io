@@ -21,8 +21,8 @@ const work = [
     summary: ` 
      `,
     highlights: [
-      'Collaborated with project lead to ensure successful completion of modeling tasks.',
-      'Design drawing preparation and tracks response to update the model, generation of shop drawings from the approved construction drawings.',
+      'Partnered with project lead to drive the successful completion of complex modeling tasks.',
+      'Prepared and updated design drawings effectively, ensuring accurate model updates and generating detailed shop drawings from approved construction plans.',
     ],
   },
   {
@@ -34,12 +34,12 @@ const work = [
     summary: ` 
      `,
     highlights: [
-      'Demonstrated ability to create and modify drawings to meet engineering requirements.',
-      'Proven success in accurately producing CAD drawings and plans from verbal and written instructions.',
-      'Highly experienced in identifying and computing materials, labor and overhead and preliminaries in accordance with bid plan, technical specifications and bid documents.',
+      'Expert in creating and modifying engineering drawings to precise specifications.',
+      'Proven track record of producing accurate CAD drawings and plans from complex instructions.',
+      'Skilled in calculating materials, labor, and overhead in alignment with bid plans and technical specifications.',
       'Exhibited skills to create business presentations and advertising tools for products and services.',
-      'Well established vision to build, design, and maintain a website.',
-      'In-depth knowledge of Identifying hardware and software solutions, and diagnosing and repairing faults.',
+      'Strong capability in designing, building, and maintaining websites with a clear strategic vision.',
+      'Advanced expertise in identifying hardware and software solutions and efficiently diagnosing and repairing faults.',
     ],
   },
 ];

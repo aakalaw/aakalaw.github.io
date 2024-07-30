@@ -26,12 +26,12 @@ const skills = [
   },
   {
     title: 'HTML + CSS',
-    competency: 4,
+    competency: 3.5,
     category: ['Web Development', 'Tools', 'Languages'],
   },
   {
     title: 'Javascript',
-    competency: 2.5,
+    competency: 3.5,
     category: ['Web Development', 'Javascript', 'Languages'],
   },
   {

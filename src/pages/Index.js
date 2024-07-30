@@ -14,7 +14,7 @@ const Index = () => (
           <h2><Link to="/">About this site</Link></h2>
           <p>
             A visually appealing and responsive React application
-            built with modern JavaScript and utilizes Firebase.
+            built with modern JavaScript.
           </p>
         </div>
       </header>

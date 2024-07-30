@@ -4,11 +4,9 @@ const data = [
     title: 'Personal Website',
     subtitle: '2024 Last Update',
     image: '/images/projects/personal-website.png',
-    date: '2024-07-27',
+    date: '2024-07-30',
     desc:
-      'A visually appealing and responsive React application built with modern JavaScript. '
-      + 'It utilizes Firebase for Google authentication, firestore database, '
-      + 'and storage. Authenticated users can effortlessly create, read, update, and delete projects directly within the dashboard.',
+      'A visually appealing and responsive React application built with modern JavaScript. ',
     url: 'https://aakalaw.github.io',
   },
 ];

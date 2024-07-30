@@ -1,12 +1,10 @@
-# Saying
+# Some Saying
 
 - I always make a to-do list every day. The real challenge is finding someone ambitious enough to do it for me!
 
-# History
+# Stories
 
-- Karl Marx famously quipped, "History repeats itself: first as tragedy, second as a farce. Third time's a charm, though, right?"
-
-You can personally ask me about stories that I'm too afraid to share on the internet.
+I typically share my stories in person, as I am hesitant to share them online.
 
 # I like
 
@@ -18,15 +16,14 @@ You can personally ask me about stories that I'm too afraid to share on the inte
 
 # Fun facts
 
-- My dream vacation with my family is to travel to Japan and experience the breathtaking beauty of cherry blossoms in full bloom.
-- I fancy myself a chef; my signature dish is a hard-boiled egg that's more metaphorical than edible.
-- If I could have any superpower, I would choose the ability to manipulate time. With this power, I could pause time to catch up on tasks or evade trouble, rewind to correct mistakes, fast-forward through tedious moments, and even journey to different periods in history.
+- I like to think of myself as a chef, though my specialty is a hard-boiled egg that's more metaphorical than edible!
+- If I could choose any superpower, it would be time manipulation. This would let me pause time to catch up on tasks, rewind to fix mistakes, fast-forward through dull moments, and even travel to different historical eras.
 
 # I dream of
 
-- Filled with inspiration and experiencing the joy of inspiring others.
-- Empowering a better future for all, irrespective of political or socioeconomic backgrounds.
-- Showing sincere kindness and respect to each person.
-- Remaining inquisitive.
+- Finding joy in the act of motivating and uplifting those around me.
+- Contributing to a better world for everyone, regardless of their political or socioeconomic status.
+- Showing heartfelt respect and compassion to every individual I encounter.
+- Maintaining a curious mind and a thirst for knowledge.
 - Consistently striving for improvement.
-- Always asking questions, even when the answer is clearly "Google it".
+- Relentlessly hunting for answers, even when “Google it” or “ChatGPT it” is the obvious choice.
