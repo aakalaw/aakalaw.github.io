@@ -1,2 +1,1 @@
-User-agent: *
-Disallow: /api
+https://aakalaw.github.io/sitemap.xml
