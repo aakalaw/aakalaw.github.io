@@ -11,11 +11,10 @@
     "node": ">=16.x"
   },
   "scripts": {
-    "generate-sitemap": "node sitemap.js",
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
     "build": "rimraf ./build && react-scripts build",
     "lint": "eslint \"**/*.js\"",
-    "predeploy": "npm run generate-sitemap && npm run build && react-snap",
+    "predeploy": "npm run build && react-snap",
     "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "test": "npx jest"
@@ -30,7 +29,6 @@
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
-    "react-ga4": "^2.1.0",
     "react-helmet-async": "^2.0.4",
     "react-router-dom": "^6.22.3",
     "react-scripts": "^5.0.1"
