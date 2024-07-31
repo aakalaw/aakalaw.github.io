@@ -5,12 +5,15 @@ import ReactGA from 'react-ga4';
 const { NODE_ENV } = process.env;
 const GA_MEASUREMENT_ID = process.env.REACT_APP_GA_MEASUREMENT_ID;
 
+if (NODE_ENV === 'production') {
+  ReactGA.initialize(GA_MEASUREMENT_ID);
+}
+
 const Analytics = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
     if (NODE_ENV === 'production') {
-      ReactGA.initialize(GA_MEASUREMENT_ID);
       ReactGA.set({
         page: pathname,
       });
