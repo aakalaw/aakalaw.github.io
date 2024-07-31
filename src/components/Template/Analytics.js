@@ -9,10 +9,13 @@ const Analytics = () => {
 
   useEffect(() => {
     if (NODE_ENV === 'production') {
+      if (!REACT_APP_GA_MEASUREMENT_ID) {
+        console.error('Error: GA_MEASUREMENT_ID is not defined');
+        return;
+      }
+      
       ReactGA.initialize(REACT_APP_GA_MEASUREMENT_ID);
-      ReactGA.set({
-        page: pathname,
-      });
+      ReactGA.set({ page: pathname });
       ReactGA.send({ hitType: 'pageview', pathname });
     }
   }, [pathname]);
