@@ -8,7 +8,7 @@ const Analytics = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    if (process.env.NODE_ENV === 'production') {
+    if (process.env.NODE_ENV === 'production' && GA_MEASUREMENT_ID) {
       ReactGA.initialize(GA_MEASUREMENT_ID);
       ReactGA.set({
         page: pathname,
