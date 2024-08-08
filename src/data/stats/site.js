@@ -70,7 +70,7 @@ const data = [
     $totalLines
     */
     label: 'Lines of Javascript powering this website',
-    value: '1501',
+    value: '1500',
     link: 'https://github.com/aakalaw/aakalaw.github.io/graphs/contributors',
   },
 ];
