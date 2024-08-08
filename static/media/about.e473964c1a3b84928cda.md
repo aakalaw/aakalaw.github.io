@@ -4,7 +4,7 @@
 
 # Stories
 
-I typically share my stories in person, as I am hesitant to share them online.
+I usually tell my stories in person because I'm a bit shy about sharing them online. But I’d love to connect with you all through these stories and hear your thoughts!
 
 # I like
 
