@@ -20,7 +20,8 @@ const Main = (props) => (
       <div id="main">
         {props.children}
       </div>
-      {props.fullPage ? null : <SideBar />}
+      {/* Conditionally render the Sidebar based on the excludeSidebar prop */}
+      {!props.excludeSidebar && <SideBar />}
     </div>
   </HelmetProvider>
 );
@@ -30,14 +31,14 @@ Main.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
-  fullPage: PropTypes.bool,
+  excludeSidebar: PropTypes.bool, // Add this prop for excluding the Sidebar
   title: PropTypes.string,
   description: PropTypes.string,
 };
 
 Main.defaultProps = {
   children: null,
-  fullPage: false,
+  excludeSidebar: false, // Default is false, so Sidebar will be shown
   title: null,
   description: "AAK's personal website.",
 };

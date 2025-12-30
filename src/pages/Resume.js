@@ -27,6 +27,7 @@ const Resume = () => (
   <Main
     title="Resume"
     description="AAK's Resume."
+    excludeSidebar
   >
     <article className="post" id="resume">
       <header>
