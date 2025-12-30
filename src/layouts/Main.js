@@ -11,23 +11,16 @@ const Main = (props) => (
   <HelmetProvider>
     <Analytics />
     <ScrollToTop />
-    <Helmet
-      titleTemplate="%s | Angelo Aaron Kalaw"
-      defaultTitle="Angelo Aaron Kalaw"
-      defer={false}
-    >
+    <Helmet titleTemplate="%s | Angelo Aaron Kalaw" defaultTitle="Angelo Aaron Kalaw" defer={false}>
       {props.title && <title>{props.title}</title>}
       <meta name="description" content={props.description} />
     </Helmet>
-
     <div id="wrapper">
       <Navigation />
       <div id="main">
         {props.children}
       </div>
-
-      {/* Hide Sidebar when excludeSidebar OR fullPage is true */}
-      {!props.excludeSidebar && !props.fullPage && <SideBar />}
+      {props.fullPage ? null : <SideBar />}
     </div>
   </HelmetProvider>
 );
@@ -37,16 +30,14 @@ Main.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
-  excludeSidebar: PropTypes.bool,
-  fullPage: PropTypes.bool, // ✅ added
+  fullPage: PropTypes.bool,
   title: PropTypes.string,
   description: PropTypes.string,
 };
 
 Main.defaultProps = {
   children: null,
-  excludeSidebar: false,
-  fullPage: false, // ✅ default
+  fullPage: false,
   title: null,
   description: "AAK's personal website.",
 };
