@@ -8,7 +8,7 @@ import data from '../data/projects';
 
 const Projects = () => (
   <Main
-    title="Projects"
+    title="Project"
     description="Learn about AAK's projects."
   >
     <article className="post" id="projects">
