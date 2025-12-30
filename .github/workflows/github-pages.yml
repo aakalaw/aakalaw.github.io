@@ -89,8 +89,4 @@ jobs:
     timeout-minutes: 10
     steps:
     - name: Deploy to GitHub Pages (master branch)
-      id: deployment
-      uses: actions/deploy-pages@v4
-      with:
-        branch: master        # Deploy to the master branch (if this is your Pages branch)
-        folder: build
+      run: npm run deploy # Runs npm run deploy to deploy to GitHub Pages
