@@ -9,6 +9,7 @@ I usually tell my stories in person because I'm a bit shy about sharing them onl
 # I like
 
 - Sudoku (because who doesn't love feeling both smart and confused at the same time?)
+- asdjkhskd
 
 # Fun facts
 
