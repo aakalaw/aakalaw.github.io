@@ -9,10 +9,6 @@ I usually tell my stories in person because I'm a bit shy about sharing them onl
 # I like
 
 - Sudoku (because who doesn't love feeling both smart and confused at the same time?)
-- Guitar (it's like therapy, but with more strings)
-- Bicycle (for when you want to travel quickly and sweat profusely)
-- Karaoke (where tone-deafness becomes a superpower)
-- Billiards (because geometry should be this fun!)
 
 # Fun facts
 
