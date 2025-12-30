@@ -32,8 +32,8 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        node-version: [22.x]
-        os: [windows-latest, ubuntu-latest, macos-latest]
+        node-version: [20.x]
+        os: [ubuntu-latest, windows-latest, macos-latest]
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}

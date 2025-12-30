@@ -8,7 +8,7 @@
     "url": "https://github.com/aakalaw/aakalaw.github.io"
   },
   "engines": {
-    "node": ">=20.x"
+    "node": ">=16.x"
   },
   "scripts": {
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
