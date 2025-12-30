@@ -141,14 +141,14 @@ jobs:
           NODE_ENV: production
           REACT_APP_GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
 
-      - name: Verify build output
+      - name: Verify static export
+        shell: bash
         run: |
           if [ ! -d "build" ]; then
-            echo "Error: 'build' directory not found. React build failed."
+            echo "Error: 'build' directory not found. Static export may have failed."
             exit 1
           fi
-          echo "Build successful. Generated $(find build -type f | wc -l) files."
-          du -sh build/
+          echo "Static export successful. Found $(find build -type f | wc -l) files."
 
       - name: Upload build artifacts
         if: matrix.os == 'ubuntu-latest' && matrix.node-version == '22.x'
