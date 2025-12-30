@@ -88,6 +88,9 @@ jobs:
     needs: build
     timeout-minutes: 10
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+    - name: Deploy to GitHub Pages (master branch)
+      id: deployment
+      uses: actions/deploy-pages@v4
+      with:
+        branch: master        # Deploy to the master branch (if this is your Pages branch)
+        folder: build
