@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 5
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [windows-latest, ubuntu-latest, macos-latest]
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
@@ -38,10 +38,10 @@ jobs:
     strategy:
       matrix:
         node-version: [20.x, 22.x]
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [windows-latest, ubuntu-latest, macos-latest]
         exclude:
           # Reduce matrix size for faster CI
-          - os: windows-latest
+          - os: ubuntu-latest
             node-version: 20.x
           - os: macos-latest
             node-version: 20.x
