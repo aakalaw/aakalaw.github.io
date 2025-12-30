@@ -7,7 +7,7 @@ import Navigation from '../components/Template/Navigation';
 import SideBar from '../components/Template/SideBar';
 import ScrollToTop from '../components/Template/ScrollToTop';
 
-const Main = ({ children, excludeSidebar, fullPage, title, description }) => (
+const Main = (props) => (
   <HelmetProvider>
     <Analytics />
     <ScrollToTop />
@@ -16,24 +16,29 @@ const Main = ({ children, excludeSidebar, fullPage, title, description }) => (
       defaultTitle="Angelo Aaron Kalaw"
       defer={false}
     >
-      {title && <title>{title}</title>}
-      <meta name="description" content={description} />
+      {props.title && <title>{props.title}</title>}
+      <meta name="description" content={props.description} />
     </Helmet>
 
     <div id="wrapper">
-      {!fullPage && <Navigation />} {/* Hide navigation on fullPage if needed */}
-      <div id="main">{children}</div>
+      <Navigation />
+      <div id="main">
+        {props.children}
+      </div>
 
-      {/* Render Sidebar only if NOT excluded AND not fullPage */}
-      {!excludeSidebar && !fullPage && <SideBar />}
+      {/* Hide Sidebar when excludeSidebar OR fullPage is true */}
+      {!props.excludeSidebar && !props.fullPage && <SideBar />}
     </div>
   </HelmetProvider>
 );
 
 Main.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
   excludeSidebar: PropTypes.bool,
-  fullPage: PropTypes.bool,
+  fullPage: PropTypes.bool, // ✅ added
   title: PropTypes.string,
   description: PropTypes.string,
 };
@@ -41,7 +46,7 @@ Main.propTypes = {
 Main.defaultProps = {
   children: null,
   excludeSidebar: false,
-  fullPage: false,
+  fullPage: false, // ✅ default
   title: null,
   description: "AAK's personal website.",
 };
