@@ -37,7 +37,7 @@ jobs:
         run: npm ci
 
       - name: Build and render
-        run: npm run predeploy
+        run: CI=false npm run predeploy
         env:
           NODE_ENV: production
           # Remove this line if you would like to skip Google Analytics
