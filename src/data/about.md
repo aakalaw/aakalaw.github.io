@@ -2,3 +2,4 @@
 
 - Sudoku
 - Mobile Legends
+- BIlliards
