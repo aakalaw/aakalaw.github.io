@@ -50,7 +50,7 @@ jobs:
         run: npm ci
 
       - name: Build React app
-        run: npm run predeploy
+        run: npm run build
         env:
           NODE_ENV: production
           # Remove if not using Google Analytics
