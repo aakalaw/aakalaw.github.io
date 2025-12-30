@@ -15,7 +15,7 @@
     "build": "rimraf ./build && react-scripts build",
     "lint": "eslint \"**/*.js\"",
     "type-check": "eslint src/**/*.{js,jsx}",
-    "format": "prettier --write \"**/*.{md,css,scss}\"",
+    "format": "npx prettier --write \"**/*.{md,css,scss}\"",
     "format:check": "npx prettier --check \"**/*.{md,css,scss}\"",
     "predeploy": "npm run build && react-snap",
     "deploy": "gh-pages -b master -d build",
