@@ -11,17 +11,23 @@ const Main = (props) => (
   <HelmetProvider>
     <Analytics />
     <ScrollToTop />
-    <Helmet titleTemplate="%s | Angelo Aaron Kalaw" defaultTitle="Angelo Aaron Kalaw" defer={false}>
+    <Helmet
+      titleTemplate="%s | Angelo Aaron Kalaw"
+      defaultTitle="Angelo Aaron Kalaw"
+      defer={false}
+    >
       {props.title && <title>{props.title}</title>}
       <meta name="description" content={props.description} />
     </Helmet>
+
     <div id="wrapper">
       <Navigation />
       <div id="main">
         {props.children}
       </div>
-      {/* Conditionally render the Sidebar based on the excludeSidebar prop */}
-      {!props.excludeSidebar && <SideBar />}
+
+      {/* Hide Sidebar when excludeSidebar OR fullPage is true */}
+      {!props.excludeSidebar && !props.fullPage && <SideBar />}
     </div>
   </HelmetProvider>
 );
@@ -31,14 +37,16 @@ Main.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
-  excludeSidebar: PropTypes.bool, // Add this prop for excluding the Sidebar
+  excludeSidebar: PropTypes.bool,
+  fullPage: PropTypes.bool, // ✅ added
   title: PropTypes.string,
   description: PropTypes.string,
 };
 
 Main.defaultProps = {
   children: null,
-  excludeSidebar: false, // Default is false, so Sidebar will be shown
+  excludeSidebar: false,
+  fullPage: false, // ✅ default
   title: null,
   description: "AAK's personal website.",
 };
