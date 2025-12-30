@@ -37,9 +37,6 @@ const work = [
       'Expert in creating and modifying engineering drawings to precise specifications.',
       'Proven track record of producing accurate CAD drawings and plans from complex instructions.',
       'Skilled in calculating materials, labor, and overhead in alignment with bid plans and technical specifications.',
-      'Exhibited skills to create business presentations and advertising tools for products and services.',
-      'Strong capability in designing, building, and maintaining websites with a clear strategic vision.',
-      'Advanced expertise in identifying hardware and software solutions and efficiently diagnosing and repairing faults.',
     ],
   },
 ];
