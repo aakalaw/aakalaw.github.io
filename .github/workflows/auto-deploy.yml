@@ -1,93 +1,43 @@
-# Deploy static React site to GitHub Pages
-name: Deploy to GitHub Pages
+name: Auto Deploy via npm run deploy
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
+    branches: ["main"]   # 🔒 ONLY main
+  workflow_dispatch:  # Allows manual triggering
 
 permissions:
-  contents: read
+  contents: write   # required for gh-pages push
   pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  id-token: write   # required for gh-pages push
 
 jobs:
-  # Build job
-  build:
-    name: Build
+  deploy:
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-    environment: github-pages
+    timeout-minutes: 15
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for proper git info
 
-      - name: Setup Node.js
+      - name: Set up Git user info
+        run: |
+          git config --global user.name "aakalaw"
+          git config --global user.email "angeloaaronkalaw@gmail.com"
+
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version-file: ".nvmrc"
           cache: "npm"
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Cache dependencies
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.npm
-            node_modules
-          key: ${{ runner.os }}-react-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-react-
-
       - name: Install dependencies
         run: npm ci
 
-      - name: Build React app
-        run: npm run build
+      - name: Build and deploy
+        run: npm run deploy
         env:
           NODE_ENV: production
-          # Remove if not using Google Analytics
-          REACT_APP_GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
-
-      - name: Verify build output
-        run: |
-          if [ ! -d "build" ]; then
-            echo "Error: 'build' directory not found."
-            exit 1
-          fi
-          echo "Build successful. Generated $(find build -type f | wc -l) files."
-          du -sh build/
-
-      - name: Ensure .nojekyll exists
-        run: |
-          if [ ! -f "build/.nojekyll" ]; then
-            touch build/.nojekyll
-          fi
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./build
-
-  # Deploy job
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    needs: build
-    timeout-minutes: 10
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-        
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
