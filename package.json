@@ -18,7 +18,7 @@
     "format": "npx prettier --write \"**/*.{md,css,scss}\"",
     "format:check": "npx prettier --check \"**/*.{md,css,scss}\"",
     "predeploy": "npm run build && ( [ \"$CI\" = \"true\" ] || react-snap )",
-    "deploy": "gh-pages -d build -b gh-pages -r https://x-access-token:${GITHUB_TOKEN}@github.com/aakalaw/aakalaw.github.io.git",
+    "deploy": "gh-pages -d build -b master",
     "start": "react-scripts start",
     "test": "npx jest"
   },
