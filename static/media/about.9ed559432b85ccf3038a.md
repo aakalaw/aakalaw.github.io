@@ -1,3 +1,0 @@
-# I LIKE
-
-- Sudoku
