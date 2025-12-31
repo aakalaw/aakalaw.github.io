@@ -14,8 +14,8 @@ const Projects = () => (
     <article className="post" id="projects">
       <header>
         <div className="title">
-          <h2><Link to="/projects">Projects</Link></h2>
-          <p>A selection of projects that I&apos;m proud of</p>
+          <h2><Link to="/projects">Project</Link></h2>
+          <p>A selection of project that I&apos;m proud of</p>
         </div>
       </header>
       {data.map((project) => (
