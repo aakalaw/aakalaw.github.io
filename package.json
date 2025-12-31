@@ -17,9 +17,8 @@
     "type-check": "eslint src/**/*.{js,jsx}",
     "format": "npx prettier --write \"**/*.{md,css,scss}\"",
     "format:check": "npx prettier --check \"**/*.{md,css,scss}\"",
-    "postbuild": "react-snap",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b master -r https://x-access-token:${GITHUB_TOKEN}@github.com/aakalaw/aakalaw.github.io.git",
+    "predeploy": "npm run build && ( [ \"$CI\" = \"true\" ] || react-snap )",
+    "deploy": "gh-pages -d build -b master",
     "start": "react-scripts start",
     "test": "npx jest"
   },
