@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkaakalaw_github_io=self.webpackChunkaakalaw_github_io||[]).push([[27],{27:(a,t,e)=>{a.exports=e.p+"static/media/about.96b5f873387637ff284c.md"}}]);
