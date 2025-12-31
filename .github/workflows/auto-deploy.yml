@@ -3,12 +3,12 @@ name: Auto Deploy via npm run deploy
 on:
   push:
     branches: ["main"]   # 🔒 ONLY main
-  workflow_dispatch:
+  workflow_dispatch:    # 🔒 ONLY main
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write   # required for gh-pages push
+  contents: write 
+  pages: write 
+  id-token: write
 
 jobs:
   # This job waits for CI to pass first
