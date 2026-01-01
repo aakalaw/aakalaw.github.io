@@ -1,3 +1,3 @@
 ## 👁️ Visit
 
-[My Personal Website](https://aakalaw.github.io)
+[My Personal Site](https://aakalaw.github.io)
