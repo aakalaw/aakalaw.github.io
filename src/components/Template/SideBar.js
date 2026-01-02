@@ -19,10 +19,10 @@ const SideBar = () => (
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, you can call me AA. I am an undergraduate student in Computer Engineering with over
-        four years of work experience in CAD Operations. I am currently working
-        as an MC Taxi rider and contribute to the operation of a small side business,
-        but I am eager to shift gears and enter the realm of the IT industry.
+      <p>Hi! You can call me AA. I am a Computer Engineering undergrad with over four years of
+        CAD Operations under my belt. I have drawn enough lines, layers, and layouts to last a
+        lifetime—so now I am looking to reboot my career and break into the IT side of the
+        universe.
       </p>
       <ul className="actions">
         <li>

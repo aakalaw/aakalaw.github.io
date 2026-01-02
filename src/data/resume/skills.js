@@ -1,48 +1,33 @@
 const skills = [
   {
     title: 'AutoCAD',
-    competency: 4,
+    competency: 3.8,
     category: ['CAD', 'Tools'],
   },
   {
     title: 'Revit',
-    competency: 2.5,
+    competency: 2.8,
     category: ['BIM', 'Tools'],
   },
   {
-    title: 'Microsoft Office',
-    competency: 4,
-    category: ['Application Suite', 'Tools'],
-  },
-  {
-    title: 'Canva',
-    competency: 4,
-    category: ['Graphic Design', 'Tools'],
-  },
-  {
-    title: 'WordPress',
-    competency: 3.5,
-    category: ['CMS'],
-  },
-  {
     title: 'HTML + CSS',
-    competency: 3.5,
-    category: ['Web Development', 'Tools', 'Languages'],
+    competency: 2.4,
+    category: ['Web Development', 'Frontend', 'Languages'],
   },
   {
     title: 'Javascript',
-    competency: 3.5,
-    category: ['Web Development', 'Javascript', 'Languages'],
+    competency: 2.4,
+    category: ['Web Development', 'Frontend', 'Languages'],
   },
   {
     title: 'React',
-    competency: 2.5,
-    category: ['Web Development', 'Javascript'],
+    competency: 2.2,
+    category: ['Web Development', 'Frontend', 'Frameworks'],
   },
   {
-    title: 'Troubleshooting',
-    competency: 3.5,
-    category: ['Software', 'Hardware', 'Network'],
+    title: 'WordPress',
+    competency: 2.2,
+    category: ['Web Development', 'CMS'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
