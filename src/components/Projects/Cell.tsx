@@ -1,5 +1,4 @@
 import dayjs from 'dayjs';
-
 import Image from 'next/image';
 import React from 'react';
 
@@ -9,25 +8,37 @@ interface CellProps {
   data: Project;
 }
 
-const Cell: React.FC<CellProps> = ({ data }) => (
-  <div className="cell-container">
+const Cell: React.FC<CellProps> = ({ data }) => {
+  const { title, date, desc, image, link } = data;
+
+  const hasLink = Boolean(link);
+
+  const cardContent = (
     <article className="mini-post">
       <header>
-        <h3>
-          <a href={data.link}>{data.title}</a>
-        </h3>
-        <time className="published">
-          {dayjs(data.date).format('MMMM, YYYY')}
-        </time>
+        <h3>{title}</h3>
+        <time className="published">{dayjs(date).format('MMMM, YYYY')}</time>
       </header>
-      <a href={data.url} className="image">
-        <Image src={data.image} alt={data.title} width={600} height={400} />
-      </a>
+      <div className="image">
+        <Image src={image} alt={title} width={600} height={400} />
+      </div>
       <div className="description">
-        <p>{data.desc}</p>
+        <p>{desc}</p>
       </div>
     </article>
-  </div>
-);
+  );
+
+  return (
+    <div className="cell-container">
+      {hasLink ? (
+        <a href={link} className="project-card-link">
+          {cardContent}
+        </a>
+      ) : (
+        <div className="project-card-static">{cardContent}</div>
+      )}
+    </div>
+  );
+};
 
 export default Cell;

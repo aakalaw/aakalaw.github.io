@@ -59,7 +59,7 @@ const Skills: React.FC<SkillsProps> = ({ skills, categories }) => {
       <CategoryButton
         label={key}
         key={key}
-        active={buttons}
+        isActive={buttons[key]}
         handleClick={handleChildClick}
       />
     ));

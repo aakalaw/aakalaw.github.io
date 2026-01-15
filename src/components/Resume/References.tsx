@@ -5,9 +5,10 @@ const References: React.FC = () => (
   <div className="references">
     <div className="link-to" id="references" />
     <div className="title">
-      <Link href="/contact">
-        <h3>References are available upon request</h3>
-      </Link>
+      <h3>
+        References available upon request.{' '}
+        <Link href="/contact">Get in touch →</Link>
+      </h3>
     </div>
   </div>
 );

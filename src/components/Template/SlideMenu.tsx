@@ -1,6 +1,10 @@
 'use client';
 
-import { type FC, type ReactNode, useCallback, useEffect, useRef } from 'react';
+import { type ReactNode, useCallback, useEffect, useRef } from 'react';
+
+// Selector for focusable elements within the menu
+const FOCUSABLE_SELECTOR =
+  'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
 interface SlideMenuProps {
   id: string;
@@ -15,14 +19,14 @@ interface SlideMenuProps {
  * Features: focus trapping, focus restoration, escape-to-close,
  * body scroll lock (iOS-safe), reduced-motion support via CSS.
  */
-const SlideMenu: FC<SlideMenuProps> = ({
+export default function SlideMenu({
   id,
   isOpen,
   onClose,
   children,
   position = 'right',
-}) => {
-  const menuRef = useRef<HTMLElement>(null);
+}: SlideMenuProps) {
+  const menuRef = useRef<HTMLDivElement>(null);
   const previousActiveElement = useRef<HTMLElement | null>(null);
 
   // Save scroll position and lock body scroll (iOS-safe)
@@ -68,9 +72,8 @@ const SlideMenu: FC<SlideMenuProps> = ({
       previousActiveElement.current = document.activeElement as HTMLElement;
 
       // Focus first focusable element in menu
-      const focusableElements = menuRef.current?.querySelectorAll<HTMLElement>(
-        'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
-      );
+      const focusableElements =
+        menuRef.current?.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR);
       if (focusableElements?.length) {
         focusableElements[0].focus();
       }
@@ -85,9 +88,8 @@ const SlideMenu: FC<SlideMenuProps> = ({
   const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
     if (e.key !== 'Tab') return;
 
-    const focusableElements = menuRef.current?.querySelectorAll<HTMLElement>(
-      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
-    );
+    const focusableElements =
+      menuRef.current?.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR);
 
     if (!focusableElements?.length) return;
 
@@ -112,17 +114,19 @@ const SlideMenu: FC<SlideMenuProps> = ({
         aria-hidden="true"
       />
       {/* Menu panel */}
-      <nav
+      <div
         ref={menuRef}
         id={id}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Navigation menu"
         className={`slide-menu slide-menu--${position}${isOpen ? ' slide-menu--open' : ''}`}
         aria-hidden={!isOpen}
+        inert={!isOpen}
         onKeyDown={handleKeyDown}
       >
         {children}
-      </nav>
+      </div>
     </>
   );
-};
-
-export default SlideMenu;
+}

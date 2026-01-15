@@ -35,7 +35,14 @@ export default function HomePage() {
         <p>
           {' '}
           Source available{' '}
-          <a href="https://github.com/aakalaw/aakalaw.github.io">here</a>.
+          <a
+            href="https://github.com/aakalaw/aakalaw.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>
+          .
         </p>
       </article>
     </PageWrapper>

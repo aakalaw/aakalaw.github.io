@@ -7,7 +7,12 @@ const ContactIcons: React.FC = () => (
   <ul className="icons">
     {data.map((s) => (
       <li key={`${s.label}-${s.link}`}>
-        <a href={s.link} aria-label={s.label}>
+        <a
+          href={s.link}
+          aria-label={s.label}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon={s.icon} />
         </a>
       </li>

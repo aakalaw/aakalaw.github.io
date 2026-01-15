@@ -45,21 +45,23 @@ const SideBar: React.FC = () => {
           <li>
             {pathname && !pathname.includes('/resume') ? (
               <Link href="/resume" className="button">
-                Learn More
+                View Resume
               </Link>
-            ) : (
-              <Link href="/about" className="button">
-                About Me
-              </Link>
-            )}
+            ) : null}
           </li>
         </ul>
       </section>
 
-      <section id="footer">
-        <ContactIcons />
+      <section id="footer" role="contentinfo">
+        <div className="footer-social" aria-labelledby="footer-social-heading">
+          <h4 id="footer-social-heading" className="footer-social-label">
+            Connect
+          </h4>
+          <ContactIcons />
+        </div>
         <p className="copyright">
-          &copy; AAK <Link href="/">aakalaw.github.io</Link>.
+          &copy; {new Date().getFullYear()} ·{' '}
+          <a href="https://aakalaw.github.io">AAK</a>
         </p>
       </section>
     </section>

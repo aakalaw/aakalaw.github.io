@@ -32,8 +32,12 @@ export default function ResumePage() {
           <h2>Resume</h2>
           <div className="link-container">
             <h4>
-              <a href="https://drive.google.com/file/d/1oiYBQNb6gUzdgIWrTN5ygLgkX5arMcE0/view">
-                download
+              <a
+                href="https://drive.google.com/file/d/1oiYBQNb6gUzdgIWrTN5ygLgkX5arMcE0/view"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download
               </a>
             </h4>
             {sections.map((section) => (

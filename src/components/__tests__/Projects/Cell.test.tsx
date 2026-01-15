@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react';
-import React from 'react';
 
 import Cell from '../../Projects/Cell';
 
@@ -11,14 +10,13 @@ describe('Cell', () => {
     date: '2023-01-01',
     desc: 'This is a test project description',
     link: 'https://example.com',
-    url: 'https://example.com',
   };
 
-  it('renders project title with link', () => {
+  it('renders project as a clickable card with link', () => {
     render(<Cell data={mockProject} />);
-    const titleLinks = screen.getAllByRole('link', { name: mockProject.title });
-    expect(titleLinks).toHaveLength(2); // Title link and image link
-    expect(titleLinks[0]).toHaveAttribute('href', mockProject.link);
+    const link = screen.getByRole('link');
+    expect(link).toHaveAttribute('href', mockProject.link);
+    expect(link).toHaveClass('project-card-link');
   });
 
   it('renders project description', () => {

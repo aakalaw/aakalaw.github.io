@@ -141,7 +141,7 @@ const EmailLink: React.FC<EmailLinkProps> = ({ loopMessage = false }) => {
 
   return (
     <div
-      className="inline-container"
+      className="contact-email-container"
       style={validateText(state.message) ? {} : { color: 'red' }}
       onMouseEnter={() => dispatch({ type: 'PAUSE' })}
       onMouseLeave={() => dispatch({ type: 'RESUME', maxIdx: messages.length })}
@@ -154,7 +154,7 @@ const EmailLink: React.FC<EmailLinkProps> = ({ loopMessage = false }) => {
         }
       >
         <span>angeloaaronkalaw@gmail.com </span>
-        <span>{state.message}</span>
+        <span className="contact-email-prefix">{state.message}</span>
       </a>
     </div>
   );
