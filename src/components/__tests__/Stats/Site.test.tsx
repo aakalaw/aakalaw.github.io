@@ -12,12 +12,12 @@ const mockGitHubData = {
 // Must mock before importing the component
 beforeAll(() => {
   // Mock global.fetch to simulate the GitHub API response
-  global.fetch = jest.fn(() =>
-    Promise.resolve({
-      ok: true,
-      json: () => Promise.resolve(mockGitHubData),
-    }),
-  );
+  global.fetch = jest.fn().mockResolvedValue({
+    ok: true,
+    status: 200,
+    statusText: 'OK',
+    json: jest.fn().mockResolvedValue(mockGitHubData),
+  });
 });
 
 // Import after mocking
