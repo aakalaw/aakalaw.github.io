@@ -14,7 +14,6 @@ describe('Sidebar', () => {
     render(<SideBar />);
 
     expect(screen.getByText('Angelo Aaron Kalaw')).toBeInTheDocument();
-    expect(screen.getByText('angeloaaronkalaw@gmail.com')).toBeInTheDocument();
   });
 
   it('displays the current year in copyright', () => {

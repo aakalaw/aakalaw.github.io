@@ -1,16 +1,16 @@
-///
-/// Future Imperfect by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
-
 /* Intro */
 
 #intro {
+  display: flex;
+  flex-direction: column; /* Stack logo and header vertically */
+  align-items: center; /* Center all child elements horizontally */
+  justify-content: center; /* Center child elements vertically (optional, if you want vertical centering) */
+  text-align: center; /* Center text inside header */
+
   .logo {
     border-bottom: 0;
-    display: inline-block;
-    margin: 0 0 (_size(element-margin) * 0.5) 0;
+    display: block;
+    margin: 0 auto (_size(element-margin) * 0.5); /* Auto margin for centering */
     overflow: hidden;
     position: relative;
 
@@ -20,17 +20,31 @@
       object-fit: cover;
       border-radius: 50%;
       display: block;
+      margin: 0 auto; /* Center the image inside the logo container */
     }
   }
 
   header {
+    width: 100%; /* Ensures header takes up full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center header text */
+    justify-content: center; /* Vertically center header text */
+
     h2 {
-      font-size: 1.5em;
+      font-size: 1.4em;
       font-weight: _font(weight-heading-extrabold);
+      margin: 0.5em 0; /* Optional: Adjust spacing between h2 and other header text */
     }
 
     p {
       font-size: 0.8em;
+    }
+
+    h4,
+    h5 {
+      font-size: 0.7em;
+      margin-top: 0.25em; /* Adjust spacing between h4 and h5 */
     }
   }
 
@@ -58,7 +72,7 @@
     }
 
     .logo {
-      margin: 0 0 (_size(element-margin) * 0.25) 0;
+      margin: 0 auto (_size(element-margin) * 0.25);
     }
 
     header {

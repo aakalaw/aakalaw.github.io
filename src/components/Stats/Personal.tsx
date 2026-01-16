@@ -7,7 +7,7 @@ import Table from './Table';
 
 const PersonalStats: React.FC = () => (
   <>
-    <h3>Some stats about me</h3>
+    <h3>About me</h3>
     <Table data={data} />
   </>
 );

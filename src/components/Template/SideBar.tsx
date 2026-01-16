@@ -23,12 +23,11 @@ const SideBar: React.FC = () => {
           />
         </Link>
         <header>
-          <h3>Angelo Aaron Kalaw</h3>
-          <p>
-            <a href="mailto:angeloaaronkalaw@gmail.com">
-              angeloaaronkalaw@gmail.com
-            </a>
-          </p>
+          <h2>Angelo Aaron Kalaw</h2>
+          <h4>1993-2026</h4>
+          <h5>
+            RIP – Resting In Procrastination… finally caught up on nothing.
+          </h5>
         </header>
       </section>
 
