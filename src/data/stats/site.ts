@@ -15,12 +15,12 @@ const data: StatData[] = [
   {
     label: 'Number of people watching this repository',
     key: 'subscribers_count',
-    link: 'https://github.com/aakalaw/aakalaw.github.io/stargazers',
+    link: 'https://github.com/aakalaw/aakalaw.github.io/watchers',
   },
   {
     label: 'Number of forks',
     key: 'forks',
-    link: 'https://github.com/aakalaw/aakalaw.github.io/network',
+    link: 'https://github.com/aakalaw/aakalaw.github.io/network/members',
   },
   {
     label: 'Number of spoons',
