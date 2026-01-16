@@ -28,7 +28,7 @@ export default function HomePage() {
           Welcome to my personal site! Feel free to review more{' '}
           <Link href="/about">about me</Link>, or you can check out my{' '}
           <Link href="/resume">resume</Link>,{' '}
-          <Link href="/projects">projects</Link>, view{' '}
+          <Link href="/projects">project</Link>, view{' '}
           <Link href="/stats">site statistics</Link>, or{' '}
           <Link href="/contact">contact</Link> me.
         </p>

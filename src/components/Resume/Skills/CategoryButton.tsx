@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface CategoryButtonProps {
   label: string;
   handleClick: (label: string) => void;

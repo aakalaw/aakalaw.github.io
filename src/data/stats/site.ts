@@ -66,7 +66,7 @@ foreach ($file in $files) {
 $totalLines
 */
     label: 'Lines of TypeScript powering this website',
-    value: '935',
+    value: '965',
     link: 'https://github.com/aakalaw/aakalaw.github.io/graphs/contributors',
   },
 ];
